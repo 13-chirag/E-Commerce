@@ -1,0 +1,60 @@
+=======ADMIN SIDE=======
+
+1. Update/Delete/Show(Active)/Hide(Deactive) the categories 
+2. Update/Delete/Show(Active)/Hide(Deactive) the Products
+3. View Orders
+4. Users Listing--> (Registered Users)
+
+1. Creating all the database(project_ecom) tables.
+    i.) Created admin table to store id, username, password for admin login
+    ii.) Created categories table to store id, categories, status of that category.
+    iii.) created products table to store id, categories_id(FOREIGN KEY), product_name, mrp, price, quantity, image, short_description, description, meta_title, meta_desc, meta_keyword, status.
+
+2. Starting with files
+    i.) Create connection.inc.php  --> inc means this file is included somewhere
+    ii.) Create functions.inc.php ---> here all the functions(methods) will be added which can be used globally also. ---> e.g. you want to create an array you create a seperate function which will print the array.----> so everytime just call this function.
+    iii.) Create login.php ---> code with validations.
+        ==> created form to enter email, password and login
+        ==> if the admin matches, then let the user redirect to categories page and also set sessions.
+    iV.) Created header.inc.php, footer.inc.php, categories.php
+        ==> created navbar in header.inc.php where logout option is there, if admin clicks on logout the sessions are made unset.
+        ==> in categories.php created table to add the categories from "table->categories" where while loop is used to add records one-by-one.
+        ==> In operations column products can be made active, inactive --> if user clicks on active the id will get updated to 0(inactive) and vice versa  
+        ==> delete option is also added.
+
+
+
+//Add to cart
+==> can be done by two ways
+-->1. by storing details in database
+-->2. By using sessions
+
+onclick function on cart button, then by using ajax session data is passed to session array which is accessed in cart.php
+
+To-Do
+1. password Hashing--> SHA512
+2. UI
+3. add categories validation
+4. stay loggedIn with cookies
+6. constant image paths and only images of png,jpg,jpeg should be uploaded
+8. Contact us form ui
+
+
+1. carousal backgrounds
+2. alertify
+3. validations on evry form of admin
+4. maximum quantity of product in cart.php
+5. Cart is empty in cart.php
+
+1. checkout.php radio buttons and submit
+2. redirect to home page after COD
+3. backend mai sab orders aane chahiye
+
+
+Front-End==>
+1. Home Page
+2. Categories Listing in Home Page
+3. Product Detials
+4. Add to cart and checkout option
+5. Payment Gateway
+5. Order History for user.
