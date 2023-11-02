@@ -178,8 +178,8 @@
                         $mail->isSMTP();
                         $mail->Host = 'smtp.gmail.com';
                         $mail->SMTPAuth = true;
-                        $mail->Username = 'chiragsonavale13@gmail.com';
-                        $mail->Password = 'nstpfellltiqxjto';
+                        $mail->Username = '';
+                        $mail->Password = '';
                         $mail->SMTPSecure = 'ssl';
                         $mail->Port = 465;
 
@@ -241,8 +241,8 @@
                         $mail->isSMTP();
                         $mail->Host = 'smtp.gmail.com';
                         $mail->SMTPAuth = true;
-                        $mail->Username = 'chiragsonavale13@gmail.com';
-                        $mail->Password = 'nstpfellltiqxjto';
+                        $mail->Username = '';
+                        $mail->Password = '';
                         $mail->SMTPSecure = 'ssl';
                         $mail->Port = 465;
 
